@@ -304,6 +304,13 @@ body {
     height: 300px;
 }
 
+@media (max-width: 630px) {
+    .about-inner {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+}
+
 /* moment */
 
 .moment-inner {
