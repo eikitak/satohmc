@@ -4,6 +4,22 @@
    window.addEventListener('DOMContentLoaded', () => {
       //////////////////////////////////////////////
 
+      // ハンバーガー
+      const navli =  document.querySelectorAll('#g-nav li');
+      const nav =   document.querySelector('#g-nav');
+       const btn = document.querySelector('.open-btn');
+       
+       btn.addEventListener('click', () => {
+         btn.classList.toggle('active');
+         nav.classList.toggle('nav-active');
+       });
+
+       navli.forEach(el => {
+         el.addEventListener('click', () => {
+            btn.classList.remove('active');
+            nav.classList.remove('nav-active');
+          });
+       });
 
       // ヒーローキャッチ
       gsap.to('.hero-catch p', {
