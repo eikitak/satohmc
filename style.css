@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 /* リセット */
 * {
     margin: 0;
@@ -570,6 +569,7 @@ body {
         padding-top: 0;
     }
 }
+
 
 /* access */
 #access iframe {
